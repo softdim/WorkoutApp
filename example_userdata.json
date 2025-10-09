@@ -1,0 +1,24 @@
+[
+    {
+        "username": "DavidH",
+        "workouts": [
+            "Bench Press"
+        ],
+        "history": [
+            {
+                "date": "xx/xx/xx",
+                "workouts": [
+                    {
+                        "name": "Bench Press",
+                        "sets": [
+                            {
+                                "weight": 120,
+                                "reps": 9
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
