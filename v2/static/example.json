@@ -1,0 +1,74 @@
+[
+    {
+        "name": "DavidH",
+        "schedule": [
+            [],
+            [
+                "Bench Press",
+                "Dumbbell Shoulder Press",
+                "Incline Dumbbell Press",
+                "Dumbbell Lat Raise",
+                "Cable Tricep Pushdown"
+            ],
+            [
+                "Barbell Back Squat",
+                "Leg Press",
+                "Bulgarian Split Squat",
+                "Leg Extensions",
+                "Hip Thrusts",
+                "Hanging Knee Raise"
+            ],
+            [
+                "Rows",
+                "Pull Ups",
+                "Seated Cable Row",
+                "Incline Dumbbell Curls",
+                "Cable Curl",
+                "Ab Machine"
+            ],
+            [
+                "Romanian Deadlift",
+                "Leg Curl Machine",
+                "Walking Lunges",
+                "Standing Calf Raises",
+                "Hip Thrusts"
+            ],
+            [
+                "Incline Bench Press",
+                "Seated Cable Row",
+                "Dumbbell Lateral Raises",
+                "Dumbbell Hammer Curl",
+                "Cable Tricep Overhead Extension"
+            ],
+            []
+        ],
+        "sessions": [
+            {
+                "weekday": 1,
+                "workouts": [
+                    {
+                        "name": "Bench Press",
+                        "sets": [
+                            {
+                                "weight": 120,
+                                "reps": 8
+                            },
+                            {
+                                "weight": 120,
+                                "reps": 8
+                            },
+                            {
+                                "weight": 120,
+                                "reps": 8
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "settings": {
+            "darkmode": true,
+            "restdelay": 30
+        }
+    }
+]

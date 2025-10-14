@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="menu" id="chooseaccount">
+        <div class="button" onclick="chooseAccount('account1')">account1</div>
+    </div>
+
+    <div class="menu" id="main">
+        <div class="button" onclick="switchMenu('chooseaccount')">Switch Account</div>
+        <div class="button" onclick="switchMenu('settings')">Settings</div>
+        <div class="button" onclick="newSession(); switchMenu('logger')">New Session</div>
+        <div class="button" onclick="continueSession(); switchMenu('logger')">Continue Session</div>
+    </div>
+
+    <div class="menu" id="settings">
+        <div class="button" onclick="switchMenu('main')">Back to Menu</div>
+        <div class="button" id="toggledarkmode">Dark Mode: ON</div>
+        <div class="button" id="setrestdelay">Rest Delay: 30s</div>
+    </div>
+
+    <div class="menu" id="logger">
+        <div class="info" id="exersize">Bench Press</div>
+        <div class="info" id="sets">__ - __ / __ - __ / __ - __</div>
+        <div class="info" id="bestset">PR8: 120 - 8</div>
+        <div class="info" id="instruction">ENTER WEIGHT:</div>
+        <div class="info" id="response">120</div>
+        <div class="keypad">
+            <div class="kprow">
+                <div class="kpbtn" onclick="keypadTap('1')">1</div>
+                <div class="kpbtn" onclick="keypadTap('2')">2</div>
+                <div class="kpbtn" onclick="keypadTap('3')">3</div>
+            </div>
+            <div class="kprow">
+                <div class="kpbtn" onclick="keypadTap('4')">4</div>
+                <div class="kpbtn" onclick="keypadTap('5')">5</div>
+                <div class="kpbtn" onclick="keypadTap('6')">6</div>
+            </div>
+            <div class="kprow">
+                <div class="kpbtn" onclick="keypadTap('7')">7</div>
+                <div class="kpbtn" onclick="keypadTap('8')">8</div>
+                <div class="kpbtn" onclick="keypadTap('9')">9</div>
+            </div>
+            <div class="kprow">
+                <div class="kpbtn" onclick="keypadTap('<')">&lt;</div>
+                <div class="kpbtn" onclick="keypadTap('0')">0</div>
+                <div class="kpbtn" onclick="keypadTap('>')">&gt;</div>
+            </div>
+        </div>
+        <div class="button" onclick="switchMenu('main')">Back to Menu</div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/server.js"></script>
+    <script src="js/gui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!--
+LOGGER
+    EXERSIZE
+    SETS
+    BESTSET
+    INSTRUCTION
+    RESPONSE
+    KEYPAD
+        1 THROUGH 9
+        DELETE (<)
+        ZERO
+        CONFIRM (>)
+CHOOSEACCOUNT
+    ACCOUNT1
+    ACCOUNT2
+    ...
+MAIN
+    SWITCHACCOUNT => CHOOSEACCOUNT
+    SETTINGS => SETTINGS
+    NEWSESSION => LOGGER
+    CONTINUESESSION => LOGGER
+SETTINGS
+    BACKTOMENU => MAIN
+    TOGGLEDARKMODE
+    SETRESTDELAY
+-->
